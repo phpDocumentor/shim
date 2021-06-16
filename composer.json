@@ -1,5 +1,5 @@
 {
-    "name": "jaapio/phpdocumentor",
+    "name": "jaapio/shim",
     "type": "composer-plugin",
     "require": {
         "composer-plugin-api": "^2.0",
