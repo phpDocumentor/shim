@@ -1,0 +1,16 @@
+{
+    "name": "jaapio/phpdocumentor",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "^2.0",
+        "phar-io\/composer-distributor": "^1.0"
+    },
+    "extra": {
+        "class": "phpDocumentor\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpDocumentor\\": "src\/"
+        }
+    }
+}
