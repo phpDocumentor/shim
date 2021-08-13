@@ -1,6 +1,7 @@
 {
     "name": "phpdocumentor/shim",
     "type": "composer-plugin",
+	  "license": ["MIT"],
     "require": {
         "composer-plugin-api": "^2.0",
         "phar-io\/composer-distributor": "^1.0"
@@ -10,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "phpDocumentor\\": "src\/"
+            "phpDocumentor\\": "src"
         }
     }
 }
