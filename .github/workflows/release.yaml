@@ -23,7 +23,7 @@ jobs:
                     gpg --auto-key-retrieve --verify phpDocumentor.phar.asc phpDocumentor.phar
             -   name: Export public key
                 run: |
-                    "gpg --export --armor info@phpdoc.org > keys/${{github.event.inputs.tag}}.key"
+                    gpg --export --armor info@phpdoc.org > ./keys/${{github.event.inputs.tag}}.key
             -   name: Commit public key
                 uses: EndBug/add-and-commit@v7
                 with:
