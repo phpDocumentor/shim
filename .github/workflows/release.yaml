@@ -30,3 +30,10 @@ jobs:
                     add: 'keys'
                     message: 'Add release ${{github.event.inputs.tag}} key'
                     default_author: github_actions
+            -   name: Release
+                uses: ncipollo/release-action@v1
+                with:
+                    tag: "v3.1.1-trash"
+                    prerelease: true
+                    draft: true
+                    body: "Release of ${{github.event.inputs.tag}} for more information see the main repo: https://github.com/phpDocumentor/phpDocumentor/releases/tag/${{github.event.inputs.tag}}"
