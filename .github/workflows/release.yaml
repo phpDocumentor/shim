@@ -4,7 +4,7 @@ on:
             tag:
                 description: 'Tag to create'
                 required: true
-
+name: Release
 jobs:
     release:
         runs-on: ubuntu-latest
