@@ -33,7 +33,5 @@ jobs:
             -   name: Release
                 uses: ncipollo/release-action@v1
                 with:
-                    tag: "v3.1.1-trash"
-                    prerelease: true
-                    draft: true
+                    tag: "${{github.event.inputs.tag}}"
                     body: "Release of ${{github.event.inputs.tag}} for more information see the main repo: https://github.com/phpDocumentor/phpDocumentor/releases/tag/${{github.event.inputs.tag}}"
