@@ -11,7 +11,7 @@ If you want to use a bleeding edge version of phpDocumentor please consult the m
 Add phpdocumentor to your project.
 
 ```
-composer require --dev phpdocumentor/shim:3^
+composer require --dev phpdocumentor/shim:^3
 ```
 
 phpDocumentor phar will be downloaded and adding into your projects `bin` directory.
