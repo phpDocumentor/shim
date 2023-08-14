@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   uses: actions/checkout@v3
-            -   uses: robinraju/release-downloader@v1.7
+            -   uses: robinraju/release-downloader@v1.8
                 name: Download release signature
                 with:
                     repository: "phpdocumentor/phpdocumentor"
